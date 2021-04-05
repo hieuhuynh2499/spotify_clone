@@ -1,0 +1,79 @@
+@import '../../scss/color.scss';
+.login {
+    padding-bottom: 30px;
+    &__logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px 0;
+        border-bottom: 1px solid #d9dadc;
+        & img {
+            height: 100px;
+            width: 200px;
+        }
+    }
+    &__network {
+        text-align: center;
+        margin-top: 50px;
+        & h2 {
+            font-size: 16px;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+        & div:nth-child(2) a:hover {
+            background-color: #3a61b3;
+        }
+        & div:nth-child(3) a:hover {
+            background-color: #333;
+        }
+        & div:nth-child(4) a:hover,
+        & div:nth-child(5) a:hover {
+            color: $white;
+            background-color: #616467;
+        }
+    }
+    &__or {
+        width: 450px;
+        margin: 0 auto;
+    }
+    &__form {
+        padding: 10px 0;
+        width: 450px;
+        margin: 0 auto;
+    }
+    &__forgot {
+        text-decoration: underline;
+        font-size: 1.7rem;
+        font-weight: 600;
+        color: #777;
+        transition: all 0.3s ease;
+        &:hover {
+            color: $green;
+        }
+    }
+    &__submit {
+        margin-top: 10px;
+        padding-bottom: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px solid #d9dadc;
+    }
+    &__checkbox {
+        & span {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: $gray;
+        }
+        & input {
+            background-color: $green;
+            border: 1px solid $green;
+        }
+    }
+    & h3 {
+        text-align: center;
+        font-size: 2rem;
+        font-weight: 700;
+        margin: 15px 0px;
+    }
+}

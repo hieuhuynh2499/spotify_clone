@@ -1,0 +1,89 @@
+@import '../../scss/color.scss';
+.footer {
+    background-color: $black;
+    padding: 100px 0;
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    &__center {
+        display: flex;
+        flex-basis: 55%;
+    }
+    &__li {
+        a {
+            display: inline-block;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 1.5;
+            text-decoration: none;
+            padding: 3px 0 15px;
+            color: $white;
+            transition: color 0.3s ease;
+            &:hover {
+                color: $green;
+            }
+        }
+    }
+    &__company,
+    &__community,
+    &__community {
+        padding: 0 20px;
+    }
+    &__Social-Network {
+        display: flex;
+        padding-top: 15px;
+    }
+    &__icon {
+        height: 50px;
+        width: 50px;
+        border-radius: 50%;
+        background-color: #222326;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 10px;
+        & svg {
+            color: $white;
+            font-size: 24px;
+            cursor: pointer;
+            &:hover {
+                color: $green;
+            }
+        }
+    }
+}
+
+.footer__title {
+    color: #919496;
+    font-size: 12px;
+    font-weight: 900;
+    line-height: 1.4;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+    margin: 20px 0;
+}
+
+@media only screen and (max-width:1150px) {
+    .footer {
+        padding: 100px 30px;
+    }
+}
+
+@media only screen and (max-width:900px) {
+    .footer {
+        &__container {
+            flex-direction: column;
+        }
+    }
+}
+
+@media only screen and (max-width:900px) {
+    .footer {
+        padding: 100px 10px;
+        &__center {
+            flex-direction: column;
+        }
+    }
+}

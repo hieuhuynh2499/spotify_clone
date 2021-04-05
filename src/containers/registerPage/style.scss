@@ -1,0 +1,84 @@
+@import '../../scss/color.scss';
+.register {
+    width: 450px;
+    margin: 0 auto;
+    padding: 50px 0;
+    &__title {
+        font-size: 1.9rem;
+        font-weight: 700;
+        margin: 20px 0px;
+    }
+    &__time {
+        display: flex;
+        justify-content: space-between;
+        & label {
+            font-size: 1.5rem;
+            font-weight: 500;
+            margin: 5px 0;
+            display: inline-block;
+        }
+        & input {
+            width: 100%;
+            height: 40px;
+            padding: 6px 12px;
+            background-color: #fff;
+            background-image: none;
+            border: 1px solid #d9dadc;
+            font-size: 1.6rem;
+            box-sizing: border-box;
+            outline: none;
+            border-radius: 5px;
+        }
+        & select {
+            display: block;
+            width: 100%;
+            height: 40px;
+            padding: 6px 12px;
+            background-color: #fff;
+            background-image: none;
+            border: 1px solid #d9dadc;
+            font-size: 1.6rem;
+            box-sizing: border-box;
+            outline: none;
+            border-radius: 5px;
+        }
+    }
+    &__date,
+    &__year {
+        width: 20%;
+    }
+    &__month {
+        width: 50%;
+    }
+    &__radio {
+        display: flex;
+    }
+    &__radio-item {
+        display: flex;
+        align-items: center;
+        padding: 5px 0;
+        margin-right: 30px;
+        & label {
+            font-size: 1.4rem;
+            font-weight: 500;
+            margin-left: 5px;
+        }
+    }
+    &__check {
+        display: flex;
+        padding: 10px 0;
+        & span {
+            font-size: 1.4rem;
+            font-weight: 500;
+            margin-left: 10px;
+        }
+    }
+    &__text {
+        font-size: 1.3rem;
+        text-align: center;
+    }
+    & h3 {
+        margin: 10px 0;
+        font-size: 1.5rem;
+    }
+}
